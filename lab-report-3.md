@@ -30,3 +30,16 @@ The `-size` modifier of the `find` command allows us to search for files based o
 For example, `find * -size +10M` prints out the names of the files which are larger than 10MB in size. The command doesn't print anything since there are no files which are larger than 10MB in this directory. Similarly, `find * -size +5M` and `find * -size +2M` also don't print anything.\
 `find * -size -2M` prints out the names of all the files which are smaller than 2MB.
 ![Image](5.jpg)
+This modifier can be really helpful when we are working on servers with limited space. We can use the `-size ` modifier to keep track of the size of the files.
+
+
+### 4. USING MULTIPLE MODIFIERS AT ONCE
+Multiple modifiers for the `find` command can be used at once.
+
+For example, `find written_2/non-fiction/OUP/Berk/*.txt -name "*.txt" -exec cat {} /;` command prints out the contents of all the `.txt` files which are at the path `skill-demo1-data/written_2/non-fiction/OUP/Berk/`
+![Image](6.jpg)
+Instead of us having to use `find` and `cat` commands separately, this command allows us to execute both those commands at once, thus saving us time and making our process more efficient.
+
+The `find written_2/non-fiction/OUP/Berk/ -name "*.txt" -delete` command deletes all the `.txt` files in the directory.
+![Image](7.jpg)
+This command can be particularly useful for example if we need to delete all the `.class` files from a directory at once.
