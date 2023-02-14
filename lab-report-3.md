@@ -33,7 +33,7 @@ For example, `find * -size +10M` prints out the names of the files which are lar
 This modifier can be really helpful when we are working on servers with limited space. We can use the `-size ` modifier to keep track of the size of the files.
 
 
-### 4. USING MULTIPLE MODIFIERS AT ONCE
+### 4. USING MULTIPLE MODIFIERS AT ONCE:-
 Multiple modifiers for the `find` command can be used at once.
 
 For example, `find written_2/non-fiction/OUP/Berk/*.txt -name "*.txt" -exec cat {} /;` command prints out the contents of all the `.txt` files which are at the path `skill-demo1-data/written_2/non-fiction/OUP/Berk/`
@@ -43,3 +43,7 @@ Instead of us having to use `find` and `cat` commands separately, this command a
 The `find written_2/non-fiction/OUP/Berk/ -name "*.txt" -delete` command deletes all the `.txt` files in the directory.
 ![Image](7.jpg)
 This command can be particularly useful for example if we need to delete all the `.class` files from a directory at once.
+
+
+### RESEARCH FOR THIS LAB REPORT
+For this lab report, I asked chatGPT to tell me about the modifiers of the `find` command. The screenshot of the chat is attached below:-
