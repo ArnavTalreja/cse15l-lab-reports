@@ -47,3 +47,5 @@ This command can be particularly useful for example if we need to delete all the
 
 ### RESEARCH FOR THIS LAB REPORT
 For this lab report, I asked chatGPT to tell me about the modifiers of the `find` command. The screenshot of the chat is attached below:-
+![Image](8.jpg)
+![Image](9.jpg)
